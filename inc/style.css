@@ -1,0 +1,334 @@
+html {
+    background-image: url("../img/bg.png");
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:16px;
+}
+.mainBody {
+    background-color: #ffffff;
+    width:980px;
+    min-height:800px;
+    height:100%;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px rgba(0,0,0, 1);
+}
+input {
+    color: #444444;
+    text-align: center;
+    width:196px;
+    height:25px;
+    font-size:16px;
+    margin:2px 0px 2px 0px;
+    
+    background-color:#F5F5F5;
+    border-radius:5px;
+    border-style:solid;
+    border-color:#DDDDDD;
+    
+}
+a {
+    text-decoration: none;
+}
+input:hover{
+    background-color:#FFFFFF;
+}
+input:focus{
+    background-color:#FFFFFF;
+}
+
+.headerBox {
+    width:100%;
+    height:150px;
+    
+    font-weight: bold;
+    background: -webkit-linear-gradient(top,  rgba(14,34,73,1) 0%,rgba(255,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(14,34,73,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*IE6-9 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e2249', endColorstr='#007db9e8',GradientType=0 ); */
+}
+.titleText {
+    color: #ffffff;
+    padding-top: 1em;
+    font-size: 40px;
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+    margin-bottom:0.3em;
+}
+.titleText2 {
+    font-size:18px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+.titleList {
+    position:relative;
+    left:0px;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+    padding-bottom:1em;
+    text-align: center;
+    width:760px;
+    clear:both;
+}
+.infoTitle {
+    margin:auto;
+    margin-bottom:1em;
+}
+#titleSeries {
+    cursor:pointer;
+    background-color:#ffffff;
+}
+#titleSeries:hover {
+    background-color:#eeeeee;
+    
+}
+.title,div.titleFirst {
+    background-color:#ffffff;
+    text-align: left;
+    display:block;
+    margin:auto;
+    margin-bottom:1em;
+    position:relative;
+    height:173px;
+    width:400px;
+    box-shadow: 5px 5px 5px rgba(100,100,100, 1);
+    
+
+}
+div.titleFirst {
+    height:200px;
+    width:450px;
+}
+.posterImage {
+    position:absolute;
+    left:0;
+    top:0;
+}
+.textBox,div.firstTitle {
+    display:inline-block;
+    width:250px;
+}
+div.firstTitle {
+    width:277px;
+}
+.titleName,p.firstTitle {
+    position:absolute;
+    top:0;
+    text-align:center;
+    width:200px;
+    font-weight: bold;
+    color: #662222;
+}
+p.firstTitle {
+    width:227px;
+    font-size:20px;
+}
+.titleInfo,p.firstTitle1 {
+    position:absolute;
+    bottom:0px;
+    margin-left:5px;
+    text-align:left;
+    width:200px;
+    font-size:14px;
+}
+p.firstTitle1 {
+    width:227px;
+    font-size:16px;
+}
+
+input[type=button] {
+    height:50px;
+    width:200px;  
+    cursor:pointer;
+}
+#searchButton {
+    width:100px;
+    height:30px;
+}
+.searchField {
+    width: 300px;
+    margin-right:1em;
+    margin-top:1em;
+}
+
+.loginBox,.settingsBox{
+    display:inline;
+    float:right;
+    background-color:#ffffff;
+    width:200px;
+    margin-right:1em;
+    box-shadow: 10px 10px 10px rgba(200,200,200, 1);
+}
+.settingsBox {
+    float:left;
+    margin-right:0em;
+    margin-left:1em;
+}
+.follow,.see,.seen,.followed{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    width:50px;
+    height:50px;
+    background-image: url("../img/added.png");
+    background-size: 50px 50px;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+.follow:hover {
+    background-image:url("../img/addIcon.png");
+}
+.followed {
+    background-image:url("../img/addIcon.png");
+}
+.followed:hover {
+    background-image:url("../img/added.png");
+}
+.see,.seen {
+    float:right;
+    bottom:-5px;
+    width:40px;
+    height:40px;
+    background-size:40px 40px;
+    background-image: url("../img/see.png");
+}
+.see:hover {
+    background-image: url("../img/seen.png");
+}
+.seen {
+    background-image: url("../img/seen.png");
+}
+.seen:hover {
+    background-image: url("../img/see.png");
+}
+.seasonList {
+    height:100%;
+    margin-bottom:10px;
+}
+.season,.episode {
+    width:300px;
+    background-color:#ccccff;
+    position:relative;
+    height:30px;
+    margin:auto;
+    margin-bottom:5px;
+    vertical-align:middle;
+    line-height:30px;
+    border-radius:5px;
+}
+.season {
+    cursor:pointer;
+}
+.season:hover {
+    background-color:#bbbbee;
+}
+.episode {
+    background-color: #eeeeee;
+}
+.Released,.notReleased,.inProgress {
+    color:#44cc44;
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin-left:5px;
+    font-weight:bold;
+    font-size:14px;
+}
+.notReleased {
+    color:#cc4444;
+}
+.inProgress {
+    color:#cc9944;
+}
+.epName {
+    word-wrap: break-word;
+    width:100px;
+}
+.apiNote{
+    margin:auto;
+    text-decoration:none;
+    text-align:center;
+    margin-top:0.5em;
+    color:#aaaaaa;
+}
+.apiNote a{
+    color:#cccccc;
+    font-weight:bold;
+}
+
+#steamButton {
+    background-image: url("https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_large_noborder.png");
+    width:114px;
+    height:43px;
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+}
+#error {
+    color: #BB2222;
+}
+.posterImg {
+    width:173px;
+    height:200px;
+    vertical-align:middle;
+}
+@media (max-width: 999px) {
+    #formbody {
+        top:35px;
+        width:100%;
+    }
+    .titleText {
+    		margin-bottom:0em;
+    	}
+    .mainBody {
+        width:100%;
+        
+    }
+    .titleList {
+        position:static;
+        width:100%;
+    }
+    .loginBox,.settingsBox ,.actionBox{
+        float:none;
+        width:100%;
+        box-shadow:none;
+        display:inline-block;
+        margin:auto;
+        margin-bottom:0.5em;
+        background-color:#bbbbbb;
+        
+    }
+    .infotextBox {
+        display:none;
+    }
+    .titleText {
+        padding-top:0em;
+    }
+}
+@media (max-width:500px) {
+    .title,div.titleFirst {
+        width:350px;
+        height:173px;
+        box-shadow:none;
+        border-bottom: solid #999999;
+    }
+    
+    .titleName, p.titleFirst {
+        width:200px;
+        font-size:16px;
+    }
+    .textBox, div.firstTitle {
+        width:200px;
+        font-size:13px;
+    }
+    .titleInfo, p.firstTitle1 {
+        width:150px;
+        font-size:13px;
+    }
+    .posterImg {
+        width:150px;
+        height:173px;
+    }
+    .searchField {
+    	width:97%;
+    	}
+}
